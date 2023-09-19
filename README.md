@@ -14,11 +14,11 @@ router: "0x641e34931C03751BFED14C4087bA395303bEd1A5"
 ```
 
 
-#### Reef Testnet (Maldives):
+#### Reef Testnet (Scuba):
 
 ```
-factory: "0xcA36bA38f2776184242d3652b17bA4A77842707e"
-router: "0x0A2906130B1EcBffbE1Edb63D5417002956dFd41"
+factory: "0x8Fc2f9577f6c58e6A91C4A80B45C03d1e71c031f"
+router: "0xd855a7c33ebF6566e846B0D6F7Ba7f7e1fe99768"
 ```
 
 ## Installing
@@ -46,10 +46,10 @@ seeds: {
 
 In JS script you can select the account with:
 ```
-const reef = await hre.reef.getSignerByName("account1");
+const reef = await hre.reef.getSignerByName("account");
 ```
 
-in `scripts/deploy.js`, where `account1` is the key of the item in the `seeds` dictionary.
+in `scripts/deploy.js`, where `account` is the key of the item in the `seeds` dictionary.
 
 
 If you get the following error:
@@ -84,11 +84,11 @@ Change the addresses in `src/trade.ts` to match the ones in the deploy scripts a
 `yarn trade`
 
 ## Random testing trading bot
-Random bot was defined for the purouse of testing swap and pool data.
-It consists of deploymant and swapping
+Random bot was defined for the purpose of testing swap and pool data.
+It consists of deployment and swapping
 
 How to run:
 - In the first instance user needs to provide 10k Reef to default accounts
-- `yarn hardhat run scripts/botInit.js` - Create tokens, facotry, router, verifie them, add liquidity and remove liquidity
+- `yarn hardhat run scripts/botInit.js` - Create tokens, factory, router, verify them, add liquidity and remove liquidity
 - Replace token addresses in `scripts/bot.js` with given output from `botInit` - Default accounts are swapping randomly with random amounts
 - `yarn hardhat run scripts/bot.js`
