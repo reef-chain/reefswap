@@ -13,7 +13,8 @@
     "calculateInitHashCode": "node --trace-warnings -r ts-node/register/transpile-only src/calculateInitHashCode.ts",
     "trade": "node -r ts-node/register/transpile-only src/trade.ts",
     "script-deploy": "yarn hardhat run scripts/deploy.js",
-    "script-add-liquidity": "yarn hardhat run scripts/add-liquidity.js"
+    "script-add-liquidity": "yarn hardhat run scripts/add-liquidity.js",
+    "script-verify": "yarn hardhat run scripts/verify.js"
   },
   "dependencies": {
     "@nomiclabs/hardhat-ganache": "^2.0.0",

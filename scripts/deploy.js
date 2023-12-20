@@ -1,5 +1,5 @@
 const hre = require("hardhat");
-const { addAddress, toWei, REEF_ADDRESS, getAddress } = require("./utils");
+const { addAddress, toWei, REEF_ADDRESS } = require("./utils");
 
 async function main() {
   const reefswapDeployer = await hre.reef.getSignerByName("account");
